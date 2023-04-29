@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/david/ontologies/2023/3/testont"
+     xml:base="https://w3id.org/def/testontw"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/david/ontologies/2023/3/testont">
-    <Prefix name="" IRI="http://www.semanticweb.org/david/ontologies/2023/3/untitled-ontology-6"/>
+     ontologyIRI="https://w3id.org/def/testontw">
+    <Prefix name="" IRI="http://www.semanticweb.org/david/ontologies/2023/3/testont"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -1395,10 +1395,6 @@ Authors: Yago Estévez Davila, José David Zapata García</Literal>
     </DataPropertyRange>
     <DLSafeRule>
         <Body>
-            <ClassAtom>
-                <Class IRI="#Wine"/>
-                <Variable IRI="urn:swrl:var#w"/>
-            </ClassAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDesignation"/>
                 <Variable IRI="urn:swrl:var#w"/>
@@ -1409,6 +1405,10 @@ Authors: Yago Estévez Davila, José David Zapata García</Literal>
                 <Variable IRI="urn:swrl:var#w"/>
                 <Variable IRI="urn:swrl:var#r"/>
             </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#w"/>
+            </ClassAtom>
             <BuiltInAtom abbreviatedIRI="swrlb:equal">
                 <Variable IRI="urn:swrl:var#hd"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
@@ -1473,14 +1473,14 @@ Authors: Yago Estévez Davila, José David Zapata García</Literal>
         </Head>
     </DLSafeRule>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sameAs"/>
-        <IRI>#Aging</IRI>
-        <Literal>https://dbpedia.org/page/Aging_of_wine</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Aging</IRI>
         <Literal>This class provides information about the wine&apos;s aging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#sameAs"/>
+        <IRI>#Aging</IRI>
+        <Literal>https://dbpedia.org/page/Aging_of_wine</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1538,14 +1538,14 @@ Authors: Yago Estévez Davila, José David Zapata García</Literal>
         <Literal>Wines with at least 60 months of aging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sameAs"/>
-        <IRI>#Grape</IRI>
-        <Literal>https://dbpedia.org/page/Grape</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Grape</IRI>
         <Literal>Fruit used to make wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#sameAs"/>
+        <IRI>#Grape</IRI>
+        <Literal>https://dbpedia.org/page/Grape</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1618,14 +1618,14 @@ Authors: Yago Estévez Davila, José David Zapata García</Literal>
         <Literal>Other kind of vegetables</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sameAs"/>
-        <IRI>#Wine</IRI>
-        <Literal>https://dbpedia.org/page/Wine</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Wine</IRI>
         <Literal>Alcoholic beverage made from fermented grape juice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#sameAs"/>
+        <IRI>#Wine</IRI>
+        <Literal>https://dbpedia.org/page/Wine</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1663,14 +1663,14 @@ Authors: Yago Estévez Davila, José David Zapata García</Literal>
         <Literal>Types of wine, depending of grapes used in the preparation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sameAs"/>
-        <IRI>#Winery</IRI>
-        <Literal>https://dbpedia.org/page/Winery</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Winery</IRI>
         <Literal>Wine makers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#sameAs"/>
+        <IRI>#Winery</IRI>
+        <Literal>https://dbpedia.org/page/Winery</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
